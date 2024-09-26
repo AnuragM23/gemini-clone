@@ -5,10 +5,21 @@
     justify-content: space-between;
     background-color: #f0f4f9;
     padding: 25px 15px;
+    
 }
 
 .sidebar img{
     width: 20px;
+}
+
+.sidebar .top{
+    margin-left: 10px;
+}
+
+.sidebar .top .menu-btn{
+    cursor: pointer;
+    width: 30px;
+    margin-left: 10px;
 }
 
 .sidebar .menu{
@@ -58,7 +69,10 @@
 .sidebar .bottom{
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 
-
+.sidebar .bottom img{
+    width: 30px;
+}
 

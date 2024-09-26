@@ -8,7 +8,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="top">
-        <img onClick={() => setExtended(!extended)} src={assets.menu_icon} alt="" />
+        <img className="menu-btn" onClick={() => setExtended(!extended)} src={assets.menu_icon} alt="" />
         <br />
         <div className="new-chat">
           <img src={assets.plus_icon} alt="" />
@@ -22,20 +22,20 @@ function Sidebar() {
               <p>What is React ...</p>
             </div>
           </div>
-        ) : null}
+        ) : ''}
       </div>
       <div className="bottom">
         <div className="bottom-item recent-entry">
           <img src={assets.question_icon} alt="" />
-          {extended ? <p>Help</p> : null}
+          {extended ? <p>Help</p> : ''}
         </div>
         <div className="bottom-item recent-entry">
           <img src={assets.history_icon} alt="" />
-          {extended ? <p>History</p> : null}
+          {extended ? <p>History</p> : ''}
         </div>
         <div className="bottom-item recent-entry">
           <img src={assets.setting_icon} alt="" />
-          {extended ? <p>Settings</p> : null}
+          {extended ? <p>Settings</p> : ''}
         </div>
       </div>
     </div>
