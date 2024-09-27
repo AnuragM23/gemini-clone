@@ -4,7 +4,7 @@ import assets from "../../assets/assets";
 import { useState } from "react";
 
 function Sidebar() {
-  const [extended, setExtended] = useState(false);
+  const [extended, setExtended] = useState(true);
   return (
     <div className="sidebar">
       <div className="top">
