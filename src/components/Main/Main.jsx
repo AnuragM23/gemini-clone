@@ -3,7 +3,7 @@ import "./Main.css";
 import assets from "../../assets/assets";
 import { useContext } from "react";
 import { Context } from "../../context/context";
-import {marked} from 'marked';
+
 
 function Main() {
   const {
@@ -65,7 +65,7 @@ function Main() {
                 <hr />
                 <hr />
               </div> : <div>
-                <p dangerouslySetInnerHTML={{ __html: marked(resultData) }}></p>
+                <p dangerouslySetInnerHTML={{ __html: resultData }}></p>
               </div>}
               
             </div>
